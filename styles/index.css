@@ -1,0 +1,128 @@
+:root {
+  --black: hsl(0, 0%, 0%);
+  --dark-grey: hsl(0, 0%, 48%);
+  --moderate-cyan: hsl(176, 50%, 47%);
+  --dark-cyan: hsl(176, 72%, 28%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Commissioner', sans-serif;
+}
+
+.header {
+  background-image: url(../images/image-hero-mobile.jpg);
+  height: 320px;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 22%, rgba(0, 0, 0, 0) 100%);
+}
+
+.nav__logo {
+  height: 20px;
+}
+
+.nav__hamburger {
+  background-image: url(../images/icon-hamburger.svg);
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu__wrapper {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.menu__wrapper.active {
+  transition: all 0.3s linear;
+  display: block;
+}
+
+.menu__x {
+  background-image: url(../images/icon-close-menu.svg);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 18px;
+  top: 30px;
+}
+
+.menu {
+  height: 200px;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 90px;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 33%;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+.menu__item:last-child {
+  border-bottom: none;
+}
+
+.main {
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  top: -90px;
+  background-color: white;
+}
+
+.project__logo {
+  margin-top: -500px;
+}
+
+.buttons__support {
+  display: inline-flex;
+  height: 55px;
+  width: 210px;
+  border-radius: 50px;
+  background-color: var(--moderate-cyan);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.buttons__tag {
+  height: 55px;
+  width: 55px;
+  background-color: var(--dark-grey);
+  background-image: url(../images/icon-bookmark.svg);
+}
